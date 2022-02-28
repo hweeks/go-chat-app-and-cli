@@ -1,0 +1,12 @@
+{
+  "name": "server",
+  "packageManager": "yarn@3.2.0",
+  "scripts": {
+    "start": "echo 'idk'",
+    "dev": "echo 'idk'",
+    "lint": "echo 'idk'",
+    "fix-lint": "echo 'idk'",
+    "beauty": "echo 'idk'",
+    "am-i-pretty": "echo 'idk'"
+  }
+}

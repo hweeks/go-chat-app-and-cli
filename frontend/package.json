@@ -1,0 +1,37 @@
+{
+  "name": "frontend",
+  "packageManager": "yarn@3.2.0",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "dev": "webpack-dev-server",
+    "lint": "eslint --ext=ts,tsx .",
+    "fix-lint": "eslint --fix --ext=ts,tsx .",
+    "beauty": "prettier -w .",
+    "am-i-pretty": "prettier -c ."
+  },
+  "dependencies": {
+    "immer": "^9.0.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "esbuild": "^0.14.23",
+    "esbuild-loader": "^2.18.0",
+    "esbuild-register": "^3.3.2",
+    "eslint": "8.10.0",
+    "eslint-plugin-react": "latest",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "2.5.1",
+    "typescript": "4.5.5",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
