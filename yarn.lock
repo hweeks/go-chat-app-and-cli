@@ -4793,7 +4793,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemon@npm:^2.0.15":
+"nodemon@npm:2.0.15, nodemon@npm:^2.0.15":
   version: 2.0.15
   resolution: "nodemon@npm:2.0.15"
   dependencies:
@@ -5980,6 +5980,8 @@ __metadata:
 "server@workspace:server":
   version: 0.0.0-use.local
   resolution: "server@workspace:server"
+  dependencies:
+    nodemon: 2.0.15
   languageName: unknown
   linkType: soft
 

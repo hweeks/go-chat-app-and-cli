@@ -9696,7 +9696,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:server", {\
           "packageLocation": "./server/",\
           "packageDependencies": [\
-            ["server", "workspace:server"]\
+            ["server", "workspace:server"],\
+            ["nodemon", "npm:2.0.15"]\
           ],\
           "linkType": "SOFT"\
         }]\

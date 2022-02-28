@@ -2,11 +2,14 @@
   "name": "server",
   "packageManager": "yarn@3.2.0",
   "scripts": {
-    "start": "echo 'idk'",
-    "dev": "echo 'idk'",
+    "start": "nodemon --exec \"go\" ./src",
+    "dev": "nodemon --ext go --exec \"go run\" --signal SIGINT ./src/",
     "lint": "echo 'idk'",
     "fix-lint": "echo 'idk'",
     "beauty": "echo 'idk'",
     "am-i-pretty": "echo 'idk'"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.15"
   }
 }
