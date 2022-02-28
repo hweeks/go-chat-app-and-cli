@@ -11,5 +11,5 @@ func main() {
 	router.GET("/rooms/:id", GetRoomById)
 	router.POST("/rooms/create", CreateRoom)
 
-	router.Run("localhost:8080")
+	router.Run("0.0.0.0:3005")
 }
