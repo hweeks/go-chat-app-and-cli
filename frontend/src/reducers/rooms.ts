@@ -1,8 +1,9 @@
 import { ROOM_ACTIONS } from "../actions";
 import produce from "immer";
+import { BACKEND_CONFIG } from "../constants";
 
 export type rooms_state = {
-  rooms?: any[];
+  rooms?: BACKEND_CONFIG["LIST_ROOMS"]["response"];
   is_loading: boolean;
   error?: string;
 };
