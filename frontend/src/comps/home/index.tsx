@@ -15,5 +15,5 @@ export const Home = () => {
   if (rooms.rooms) {
     return <pre>{JSON.stringify(rooms.rooms, null, 2)}</pre>;
   }
-  return <>hello, world!</>;
+  return <>hello, error state!</>;
 };
