@@ -6491,6 +6491,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./frontend/",\
           "packageDependencies": [\
             ["frontend", "workspace:frontend"],\
+            ["@types/react-redux", "npm:7.1.22"],\
             ["@typescript-eslint/eslint-plugin", "virtual:e35870fea69d76949564aef45df10b2864842488434b42d74d41b45affbb5e93e8218b05bf4c3f79c8a9cfd5a5de6d4eda7b9d9848164825a06c5f79184156a7#npm:5.12.1"],\
             ["@typescript-eslint/parser", "virtual:e35870fea69d76949564aef45df10b2864842488434b42d74d41b45affbb5e93e8218b05bf4c3f79c8a9cfd5a5de6d4eda7b9d9848164825a06c5f79184156a7#npm:5.12.1"],\
             ["esbuild", "npm:0.14.23"],\

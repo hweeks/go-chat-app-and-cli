@@ -2,38 +2,41 @@ package main
 
 import (
 	"net/http"
+	"time"
 
 	"github.com/gin-gonic/gin"
+	"github.com/google/uuid"
 )
 
 type author struct {
-	ID   string `json:"id"`
-	Name string `json:"name"`
+	ID     string `json:"id"`
+	Name   string `json:"name"`
+	Online bool   `json:"online"`
 }
 
 type message struct {
-	ID      string `json:"id"`
-	Content string `json:"content"`
-	Author  author `json:"author"`
+	ID      string    `json:"id"`
+	Content string    `json:"content"`
+	Author  author    `json:"author"`
+	SentAt  time.Time `json:"posted"`
 }
 
 type room struct {
 	ID       string    `json:"id"`
-	Online   float32   `json:"online"`
-	Offline  float32   `json:"offline"`
+	Users    []author  `json:"users"`
 	Messages []message `json:"messages"`
 }
 
 var authors = []author{
-	{ID: "1", Name: "hamsolo"},
+	{ID: uuid.NewString(), Name: "hamsolo"},
 }
 
 var messages = []message{
-	{ID: "1", Content: "hello y'all!", Author: authors[0]},
+	{ID: uuid.NewString(), Content: "hello y'all!", Author: authors[0]},
 }
 
 var rooms = []room{
-	{ID: "1", Online: 1, Offline: 0, Messages: messages},
+	{ID: uuid.NewString(), Users: authors, Messages: messages},
 }
 
 func GetRooms(c *gin.Context) {

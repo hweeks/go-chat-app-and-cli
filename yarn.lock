@@ -551,7 +551,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-redux@npm:^7.1.20":
+"@types/react-redux@npm:7.1.22, @types/react-redux@npm:^7.1.20":
   version: 7.1.22
   resolution: "@types/react-redux@npm:7.1.22"
   dependencies:
@@ -2582,7 +2582,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-loader@npm:^2.18.0":
+"esbuild-loader@npm:2.18.0":
   version: 2.18.0
   resolution: "esbuild-loader@npm:2.18.0"
   dependencies:
@@ -2612,7 +2612,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild-register@npm:^3.3.2":
+"esbuild-register@npm:3.3.2":
   version: 3.3.2
   resolution: "esbuild-register@npm:3.3.2"
   peerDependencies:
@@ -2649,7 +2649,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.14.23, esbuild@npm:^0.14.6":
+"esbuild@npm:0.14.23, esbuild@npm:^0.14.6":
   version: 0.14.23
   resolution: "esbuild@npm:0.14.23"
   dependencies:
@@ -3149,27 +3149,28 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "frontend@workspace:frontend"
   dependencies:
+    "@types/react-redux": 7.1.22
     "@typescript-eslint/eslint-plugin": latest
     "@typescript-eslint/parser": latest
-    esbuild: ^0.14.23
-    esbuild-loader: ^2.18.0
-    esbuild-register: ^3.3.2
+    esbuild: 0.14.23
+    esbuild-loader: 2.18.0
+    esbuild-register: 3.3.2
     eslint: 8.10.0
     eslint-plugin-react: latest
-    html-webpack-plugin: ^5.5.0
-    immer: ^9.0.12
+    html-webpack-plugin: 5.5.0
+    immer: 9.0.12
     prettier: 2.5.1
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    react-is: ^17.0.2
-    react-redux: ^7.2.6
-    redux: ^4.1.2
-    redux-thunk: ^2.4.1
-    styled-components: ^5.3.3
+    react: 17.0.2
+    react-dom: 17.0.2
+    react-is: 17.0.2
+    react-redux: 7.2.6
+    redux: 4.1.2
+    redux-thunk: 2.4.1
+    styled-components: 5.3.3
     typescript: 4.5.5
-    webpack: ^5.69.1
-    webpack-cli: ^4.9.2
-    webpack-dev-server: ^4.7.4
+    webpack: 5.69.1
+    webpack-cli: 4.9.2
+    webpack-dev-server: 4.7.4
   languageName: unknown
   linkType: soft
 
@@ -3550,7 +3551,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-webpack-plugin@npm:^5.5.0":
+"html-webpack-plugin@npm:5.5.0":
   version: 5.5.0
   resolution: "html-webpack-plugin@npm:5.5.0"
   dependencies:
@@ -3738,7 +3739,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"immer@npm:^9.0.12":
+"immer@npm:9.0.12":
   version: 9.0.12
   resolution: "immer@npm:9.0.12"
   checksum: bcbec6d76dac65e49068eb67ece4d407116e62b8cde3126aa89c801e408f5047763ba0aeb62f1938c1aa704bb6612f1d8302bb2a86fa1fc60fcc12d8b25dc895
@@ -5452,7 +5453,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^17.0.2":
+"react-dom@npm:17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -5465,6 +5466,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-is@npm:17.0.2, react-is@npm:^17.0.2":
+  version: 17.0.2
+  resolution: "react-is@npm:17.0.2"
+  checksum: 9d6d111d8990dc98bc5402c1266a808b0459b5d54830bbea24c12d908b536df7883f268a7868cfaedde3dd9d4e0d574db456f84d2e6df9c4526f99bb4b5344d8
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1, react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -5472,14 +5480,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^17.0.2":
-  version: 17.0.2
-  resolution: "react-is@npm:17.0.2"
-  checksum: 9d6d111d8990dc98bc5402c1266a808b0459b5d54830bbea24c12d908b536df7883f268a7868cfaedde3dd9d4e0d574db456f84d2e6df9c4526f99bb4b5344d8
-  languageName: node
-  linkType: hard
-
-"react-redux@npm:^7.2.6":
+"react-redux@npm:7.2.6":
   version: 7.2.6
   resolution: "react-redux@npm:7.2.6"
   dependencies:
@@ -5500,7 +5501,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.2":
+"react@npm:17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:
@@ -5554,7 +5555,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"redux-thunk@npm:^2.4.1":
+"redux-thunk@npm:2.4.1":
   version: 2.4.1
   resolution: "redux-thunk@npm:2.4.1"
   peerDependencies:
@@ -5563,7 +5564,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"redux@npm:^4.0.0, redux@npm:^4.1.2":
+"redux@npm:4.1.2, redux@npm:^4.0.0":
   version: 4.1.2
   resolution: "redux@npm:4.1.2"
   dependencies:
@@ -6321,7 +6322,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"styled-components@npm:^5.3.3":
+"styled-components@npm:5.3.3":
   version: 5.3.3
   resolution: "styled-components@npm:5.3.3"
   dependencies:
@@ -6755,7 +6756,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-cli@npm:^4.9.2":
+"webpack-cli@npm:4.9.2":
   version: 4.9.2
   resolution: "webpack-cli@npm:4.9.2"
   dependencies:
@@ -6803,7 +6804,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-dev-server@npm:^4.7.4":
+"webpack-dev-server@npm:4.7.4":
   version: 4.7.4
   resolution: "webpack-dev-server@npm:4.7.4"
   dependencies:
@@ -6875,7 +6876,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.69.1":
+"webpack@npm:5.69.1":
   version: 5.69.1
   resolution: "webpack@npm:5.69.1"
   dependencies:
