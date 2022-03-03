@@ -1,42 +1,54 @@
-# go chatt app and cli
+# go chat app and cli
 
 ## overview
 
-i'm learning go, so i thought i'd do it the fun way and build some actual app, trying to make it 'production worthy'. to that end i'm going to layout my plan here so that i can forget it!
+this application serves as an example and a learning bed for my knowledge. i'm building this in the hopes it can help other developers learn something. all of the things i build, i must understand intrinsically, and to that end i carefully and intentionally do _each_ step. i want to capture those learnings for myself, and hopefully you the reader.
+
+## layout
+
+the application is setup as a mono-repo. a mono-repo has some distinct advantages for an org and a user. the ability to grok the entire app, as well as intrinsic prevention of library drift leads to a killer one two punch of maintainability and traceability. there's more we can go into, and i will at some more appropriate point.
+
+as a high level overview:
+
+```mermaid
+graph LR
+    U[user] -- browser --> A[web ui]
+    U -- terminal --> C[cli]
+    A -- http --> S[server]
+    S -- http -->  D[(Database)]
+    D -- http -->  S
+    S -- http -->  A
+    C -- http -->  S
+    S -- http -->  C
+```
+
+in english:
+
+- there are two UIs for the backend
+- one is web
+- one is cli
+- both talk to the server via http
+- server communicates with a db
+- responses are sent back
 
 ## plan
 
-core features:
+see [ROADMAP.md](./ROADMAP.md)
 
-* frontend to chat
-* backend in go
-* data in mysql
-* user login
-* room CRUD
-* message CRUD
-* cli app to chat
-
-## progress
-
-* frontend skeleton done
-* dev mode functional
-
-## how to
+## getting started
 
 this is a hybrid project in a monorepo. using yarn 3 we are adding a series of util from the npm ecosystem to lubricate and improve the go dev experience.
 
-### getting started
-
-to init:
+### init
 
 ```
 $ yarn
 ```
 
-to dev:
+### development
 
 ```
 $ yarn dev
 ```
 
-*MUST HAVE DOCKER, NODE, YARN installed*
+navigate to [localhost:3000](http://localhost:3000), make changes in the fe or be, it will reload and run as needed!

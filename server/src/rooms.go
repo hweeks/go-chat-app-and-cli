@@ -24,6 +24,7 @@ type message struct {
 type room struct {
 	ID       string    `json:"id"`
 	Users    []author  `json:"users"`
+	Title    string    `json:"title"`
 	Messages []message `json:"messages"`
 }
 
@@ -36,7 +37,7 @@ var messages = []message{
 }
 
 var rooms = []room{
-	{ID: uuid.NewString(), Users: authors, Messages: messages},
+	{ID: uuid.NewString(), Title: "the one place we can cry", Users: authors, Messages: messages},
 }
 
 func GetRooms(c *gin.Context) {
