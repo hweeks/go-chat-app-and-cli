@@ -22,6 +22,8 @@ export type FAIL_ROOMS_ACTION = Action<ROOM_ACTIONS.FAIL_ROOMS> & {
   payload: string;
 };
 
+export type REDUCER_ROOM_ACTIONS = GET_ROOM_ACTION | RECEIVE_ROOMS_ACTION | FAIL_ROOMS_ACTION
+
 const fetching_rooms = (): GET_ROOM_ACTION => ({
   type: ROOM_ACTIONS.GET_ROOMS,
 });

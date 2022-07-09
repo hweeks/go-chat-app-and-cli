@@ -1,4 +1,5 @@
 import { ROOM_ACTIONS } from "../actions";
+import type { REDUCER_ROOM_ACTIONS } from "../actions";
 import produce from "immer";
 import { BACKEND_CONFIG } from "../constants";
 
@@ -9,9 +10,9 @@ export type rooms_state = {
 };
 
 const initial_state: rooms_state = {
-  rooms: null,
+  rooms: undefined,
   is_loading: false,
-  error: null,
+  error: undefined,
 };
 
 const rooms_fetching = (state) => {
@@ -28,14 +29,14 @@ const rooms_failed = (state, payload) => {
   state.error = payload;
 };
 
-export default (state = initial_state, { type, payload }) =>
+export default (state = initial_state, action: REDUCER_ROOM_ACTIONS) =>
   produce(state, (draft) => {
-    switch (type) {
+    switch (action.type) {
       case ROOM_ACTIONS.GET_ROOMS:
         return rooms_fetching(draft);
       case ROOM_ACTIONS.RECEIVE_ROOMS:
-        return rooms_fetched(draft, payload);
+        return rooms_fetched(draft, action.payload);
       case ROOM_ACTIONS.FAIL_ROOMS:
-        return rooms_failed(draft, payload);
+        return rooms_failed(draft, action.payload);
     }
   });
