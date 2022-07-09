@@ -1,6 +1,6 @@
 import React from "react";
 import { search_rooms } from "../../actions";
-import { use_app_dispatch, use_app_selector } from "../../hooks";
+import { use_app_dispatch, use_app_selector } from "../../store";
 
 export const Home = () => {
   const rooms = use_app_selector((state) => state.rooms);

@@ -10,12 +10,13 @@
     "am-i-pretty": "prettier -c ."
   },
   "dependencies": {
+    "@reduxjs/toolkit": "1.8.3",
     "immer": "9.0.12",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-is": "17.0.2",
     "react-redux": "7.2.6",
-    "redux": "4.1.2",
+    "redux": "4.2.0",
     "redux-thunk": "2.4.1",
     "styled-components": "5.3.3"
   },
